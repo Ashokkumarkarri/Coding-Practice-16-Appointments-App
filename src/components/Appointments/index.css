@@ -1,0 +1,137 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Appointment-input-div {
+  padding: 10px;
+  flex: 1; /* 👈 allow it to grow */
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.card {
+  width: 90vw;
+  max-width: 1100px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Appointment-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; /* 👈 add nice gap between form and image */
+}
+
+.Appointment-img {
+  flex: 1;
+  width: 100%;
+  max-width: 250px;
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+.add-button {
+  height: 36px;
+  width: 100px;
+  border: none;
+  background-color: #8b5cf6;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.input-el {
+  width: 100%; /* 👈 full width input */
+  height: 36px;
+  margin: 5px 0 15px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.bottom-bg-card {
+  padding: 10px;
+}
+
+.card-inside-div-1 {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starred-button-on {
+  background-color: #8b5cf6;
+  width: 80px;
+  height: 36px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.starred-button-off {
+  background-color: #fffbfb;
+  width: 80px;
+  height: 36px;
+  border-radius: 10px;
+  color: #8b5cf6;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Appointment-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Appointment-input-div {
+    width: 100%;
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .Appointment-img-div {
+    order: 1;
+    width: 100%;
+  }
+
+  .Appointment-img {
+    width: 60vw;
+    max-width: 200px;
+  }
+
+  .card {
+    width: 95vw;
+    min-height: auto;
+  }
+
+  ul {
+    justify-content: center;
+  }
+}
